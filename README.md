@@ -90,4 +90,26 @@ cv2.waitKey(0)<br>
 output<br>
 ![image](https://user-images.githubusercontent.com/98144065/174053925-eedac977-542c-4e38-af49-7abb9990436e.png)
 ![image](https://user-images.githubusercontent.com/98144065/174054013-e886db9f-4469-4c0a-8469-813b5d285854.png)
+<br>
+prg9 rgb,grey,threshold<br>
+import cv2
+img=cv2.imread('img.jpg')
+cv2.imshow("RGB",img)
+cv2.waitKey(0)
+img=cv2.imread('img.jpg',0)
+cv2.imshow("Gray",img)
+cv2.waitKey(0)
+ret, bw_img=cv2.threshold(img,127,100,cv2.THRESH_BINARY)
+cv2.imshow("Binary",bw_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()<br>
+output<br>
+![image](https://user-images.githubusercontent.com/98144065/174056384-124dfe7e-68aa-4499-a3ed-f3f219ce9baa.png)
+![image](https://user-images.githubusercontent.com/98144065/174056421-9f24489c-0724-4619-9577-08839509a24e.png)
+![image](https://user-images.githubusercontent.com/98144065/174056456-eaf01bfb-422b-4f1c-9a7b-bacf3fbfb937.png)
+
+
+
+
+
 
