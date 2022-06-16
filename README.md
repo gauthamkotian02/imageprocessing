@@ -51,12 +51,15 @@ img=cv2.imread('img.jpg')
 plt.imshow(img)
 plt.show()
 img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+plt.imshow(img)
 plt.show()
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+plt.imshow(img)
 plt.show()
 <br>
 output<br>
-![image](https://user-images.githubusercontent.com/98144065/174053401-8c74c2fd-f4b1-4303-a0b0-8e311d14ed18.png)
+![image](https://user-images.githubusercontent.com/98144065/174058127-096ea256-6e39-4646-819b-ee048fb84b89.png)
+
 <br>
 prg7<br>
 from PIL import Image
