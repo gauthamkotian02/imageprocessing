@@ -109,7 +109,39 @@ cv2.destroyAllWindows()<br>
 output<br>
 ![image](https://user-images.githubusercontent.com/98144065/174056384-124dfe7e-68aa-4499-a3ed-f3f219ce9baa.png)
 ![image](https://user-images.githubusercontent.com/98144065/174056421-9f24489c-0724-4619-9577-08839509a24e.png)
-![image](https://user-images.githubusercontent.com/98144065/174056456-eaf01bfb-422b-4f1c-9a7b-bacf3fbfb937.png)
+![image](https://user-images.githubusercontent.com/98144065/174056456-eaf01bfb-422b-4f1c-9a7b-bacf3fbfb937.png)<br>
+prg10<br>
+from skimage import io
+import matplotlib.pyplot as plt
+url='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.jpg'
+image=io.imread(url)
+plt.imshow(image)
+plt.show()<br>
+outout<br>
+![image](https://user-images.githubusercontent.com/98144065/175263156-ac858d70-2716-4b85-8c7f-81528cd46748.png)<br>
+prg11<br>
+import cv2
+import matplotlib.image as mping 
+import matplotlib.pyplot as plt
+img1=cv2.imread('img1.jpg')
+image1=cv2.imread('image1.jpg')
+fimg1=img1+image1
+plt.imshow(fimg1)
+plt.show()<br>
+![image](https://user-images.githubusercontent.com/98144065/175263796-60d2ed5e-352a-40ed-9648-04531fd7b6fe.png)<br>
+fimg1=img1-image1
+plt.imshow(fimg1)
+plt.show()<br>
+![image](https://user-images.githubusercontent.com/98144065/175263975-15f0fb51-6f70-4c90-9f37-232cce48fa9b.png)
+<br>
+fimg1=img1*image1
+plt.imshow(fimg1)
+plt.show()
+![image](https://user-images.githubusercontent.com/98144065/175264064-c3ee50f7-d55b-4943-8f60-8a143546e747.png)
+<br>
+
+
+
 
 
 
