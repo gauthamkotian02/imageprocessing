@@ -177,7 +177,56 @@ plt.subplot(1, 2, 2)
 plt.imshow(result_white)
 plt.show()<br>
 output<br>
-![image](https://user-images.githubusercontent.com/98144065/175270268-6f2e91df-c7d2-44cd-9583-21e00f8bff5f.png)
+![image](https://user-images.githubusercontent.com/98144065/175270268-6f2e91df-c7d2-44cd-9583-21e00f8bff5f.png)<br>
+final_mask=mask+mask_white
+final_result = cv2.bitwise_and(img, img, mask=final_mask)
+plt.subplot(1, 2, 1)
+plt.imshow(final_mask, cmap="gray")
+plt.subplot(1, 2, 2)
+plt.imshow(final_result)
+plt.show()
+<br>
+output<br>
+![image](https://user-images.githubusercontent.com/98144065/175271487-9e0f7423-0e79-4e05-af53-0c969464e440.png)
+blur=cv2.GaussianBlur(final_result, (7, 7), 0)
+plt.imshow(blur)
+plt.show()<br>
+output<br>
+![image](https://user-images.githubusercontent.com/98144065/175271621-7d31b2ef-bdcb-4df1-b2f6-1b12c9f4c70e.png)<br>
+prg13<br>
+import cv2 
+img = cv2.imread("D:\image1.jpg")
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV) 
+cv2.imshow("GRAY image",gray)
+cv2.imshow("HSV image",hsv)
+cv2.imshow("LAB image",lab)
+cv2.imshow("HLS image",hls) 
+cv2.imshow("YUV image",yuv)
+cv2.waitKey(0)
+cv2.destroyAllWindows()<br>
+output<br>
+![image](https://user-images.githubusercontent.com/98144065/175272332-07154bdb-f5b3-48c0-b08f-fdf27ddd8450.png)
+<br>
+prg14<br>
+import cv2 as c
+import numpy as np
+from PIL import Image
+array = np.zeros([100, 200, 3], dtype=np.uint8)
+array[:,:100]=[255, 130, 0]
+array[:,100:]=[0, 0, 255]
+img = Image.fromarray(array)
+img.save('image1.jpg')
+img.show()
+c.waitKey(0)<br>
+output<br>
+![image](https://user-images.githubusercontent.com/98144065/175272609-89692f11-d452-49ec-bbdc-c5a5f3c5ea67.png)
+
+
+
 
 
 
