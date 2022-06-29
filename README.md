@@ -270,6 +270,9 @@ cv2.waitKey(0)<br><br><br>
 cv2.destroyAllWindows()<br><br><br>
 output
 ![Screenshot 2022-06-29 151750](https://user-images.githubusercontent.com/98144065/176406949-426e6b74-4f68-4388-a021-c87f70df726f.png)<br><br><br>
+![image](https://user-images.githubusercontent.com/98144065/176420860-423a6414-0e98-4929-a1dc-ea322bf22f40.png)<br>
+![image](https://user-images.githubusercontent.com/98144065/176420944-b73b53f5-9ebf-451c-bee4-7481607cf881.png)<br>
+![image](https://user-images.githubusercontent.com/98144065/176421020-54810ea7-b5bc-4f39-a14a-f1c51a25c0da.png)<br>
 prg17<br><br><br>
 from PIL import Image<br><br><br>
 from PIL import ImageEnhance <br><br><br>
