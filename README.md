@@ -360,6 +360,26 @@ plt.imshow(equ, 'gray')<br>
 plt.show()<br>
 output<br>
 ![image](https://user-images.githubusercontent.com/98144065/178699646-b6f11c22-f112-41d3-9a21-afefef6f6030.png)<br>
+prg21<br>
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+image=cv2.imread('img1.jpg',0) <br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+    for j in  range(0,y):<br>
+        if(image[i][j]>50 and image[i][j]<150):<br>
+            z[i][j]=255<br>
+        else:<br>
+            z[i][j]=0<br>
+equ=np.hstack((image, z))<br>
+plt.title('Graylevel slicing w/o background')<br>
+plt.imshow(equ, 'gray')<br>
+plt.show()<br>
+output<br>
+![image](https://user-images.githubusercontent.com/98144065/178705138-38301cd4-7a05-43e4-98bb-3474b1e8ac66.png)<br>
+<br>
 
 
 
