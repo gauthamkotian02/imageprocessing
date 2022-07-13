@@ -340,7 +340,27 @@ if isSaved:<br>
     output<br>
     ![image](https://user-images.githubusercontent.com/98144065/178697184-d50e099a-ac16-4d3c-b57f-4949809bf185.png)<br>
     ![image](https://user-images.githubusercontent.com/98144065/178697229-e18e7262-89fe-4695-94ae-15c208c52455.png)<br>
-    ![image](https://user-images.githubusercontent.com/98144065/178697455-3f7b717a-5a58-4066-a53c-365faac250d0.png)
+    ![image](https://user-images.githubusercontent.com/98144065/178697455-3f7b717a-5a58-4066-a53c-365faac250d0.png)<br>\
+    prg20<br>
+    import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+image=cv2.imread('img1.jpg', 0)<br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+    for j in range(0,y):<br>
+        if(image[i][j]>50 and image[i][j]<150):<br>
+            z[i][j]=255<br>
+        else:<br>
+            z[i][j]=image[i][j]<br>
+equ=np.hstack ((image, z))<br>
+plt.title('Graylevel slicing with background')<br>
+plt.imshow(equ, 'gray')<br>
+plt.show()<br>
+output<br>
+![image](https://user-images.githubusercontent.com/98144065/178699646-b6f11c22-f112-41d3-9a21-afefef6f6030.png)<br>
+
 
 
     
