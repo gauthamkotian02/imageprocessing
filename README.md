@@ -326,6 +326,28 @@ plt.imshow(gradient)<br>
 cv2.waitKey(0)<br>
 output<br>
 ![image](https://user-images.githubusercontent.com/98144065/176410428-bac5374f-f904-41ff-98b6-ba94f9770576.png)<br>
+prg19<br>
+import cv2<br>
+OriginalImg=cv2.imread('img1.jpg')<br>
+GrayImg=cv2.imread('img1.jpg',0)<br>
+isSaved=cv2.imwrite('D:/i.jpg', GrayImg) <br>
+cv2.imshow('Display Original Image',OriginalImg)<br>
+cv2.imshow('Display Grayscale Image', GrayImg)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+if isSaved:<br>
+    print('The image is successfully saved.')<br>
+    output<br>
+    ![image](https://user-images.githubusercontent.com/98144065/178697184-d50e099a-ac16-4d3c-b57f-4949809bf185.png)<br>
+    ![image](https://user-images.githubusercontent.com/98144065/178697229-e18e7262-89fe-4695-94ae-15c208c52455.png)<br>
+    ![image](https://user-images.githubusercontent.com/98144065/178697455-3f7b717a-5a58-4066-a53c-365faac250d0.png)
+
+
+    
+
+
+
+
 
 
 
