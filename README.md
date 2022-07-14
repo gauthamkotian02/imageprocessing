@@ -380,6 +380,36 @@ plt.show()<br>
 output<br>
 ![image](https://user-images.githubusercontent.com/98144065/178705138-38301cd4-7a05-43e4-98bb-3474b1e8ac66.png)<br>
 <br>
+prg22<br><br><br>
+
+import cv2<br><br>
+
+from matplotlib import pyplot as plt<br><br>
+
+img = cv2.imread('img.jpg',0)<br><br>
+plt.imshow(img)<br><br>
+plt.show()<br><br>
+
+histr = cv2.calcHist([img],[0],None,[256],[0,256])<br><br>
+plt.plot(histr)<br><br>
+plt.show()<br><br>
+output<br><br>
+![image](https://user-images.githubusercontent.com/98144065/178959806-52df6dfd-f137-41b9-bbde-bea26e80a452.png)<br><br>
+prg23<br><br>
+import cv2<br><br>
+import numpy as np<br><br>
+img  = cv2.imread('img1.jpg',0)<br><br>
+plt.imshow(img)<br><br>
+plt.show()<br><br>
+hist = cv2.calcHist([img],[0],None,[256],[0,256])<br><br>
+plt.hist(img.ravel(),256,[0,256])<br><br>
+
+plt.show()<br><br>
+output<br><br>
+![image](https://user-images.githubusercontent.com/98144065/178959925-61c9a3b6-ab5a-4ff3-84bd-9504af104f80.png)<br>
+
+
+
 
 
 
