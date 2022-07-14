@@ -395,6 +395,8 @@ plt.plot(histr)<br><br>
 plt.show()<br><br>
 output<br><br>
 ![image](https://user-images.githubusercontent.com/98144065/178959806-52df6dfd-f137-41b9-bbde-bea26e80a452.png)<br><br>
+![image](https://user-images.githubusercontent.com/98144065/178960240-ee12c05f-9d92-4bc4-94d5-c9dc80689792.png)<br><br>
+
 prg23<br><br>
 import cv2<br><br>
 import numpy as np<br><br>
@@ -406,7 +408,9 @@ plt.hist(img.ravel(),256,[0,256])<br><br>
 
 plt.show()<br><br>
 output<br><br>
-![image](https://user-images.githubusercontent.com/98144065/178959925-61c9a3b6-ab5a-4ff3-84bd-9504af104f80.png)<br>
+![image](https://user-images.githubusercontent.com/98144065/178959925-61c9a3b6-ab5a-4ff3-84bd-9504af104f80.png)<br><br>
+![image](https://user-images.githubusercontent.com/98144065/178960309-a4791935-6950-4386-b2f0-63f639eaa1f2.png)<br><br>
+
 
 
 
