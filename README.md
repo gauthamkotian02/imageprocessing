@@ -411,6 +411,10 @@ output<br><br>
 ![image](https://user-images.githubusercontent.com/98144065/178959925-61c9a3b6-ab5a-4ff3-84bd-9504af104f80.png)<br><br>
 ![image](https://user-images.githubusercontent.com/98144065/178960309-a4791935-6950-4386-b2f0-63f639eaa1f2.png)<br><br>
 prg24<br><br>
+Program to perform basic image data analysis using intensity transformation:<br>
+a) Image negative<br>
+b) Log transformation<br>
+c) Gamma correction<br>
 %matplotlib inline<br>
 import imageio<br>
 import matplotlib.pyplot as plt<br>
