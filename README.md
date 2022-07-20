@@ -468,6 +468,10 @@ plt.axis('off');<br>
 output<br><br>
 ![image](https://user-images.githubusercontent.com/98144065/179949121-b3a06a89-a30b-41e4-b8fa-bd8ba86b633a.png)<br><br>
 prg28<br><br>
+Program to perform basic image manipulation:<br>
+a) Sharpness<br>
+b) Flipping<br>
+c) Cropping<br>
 from PIL import Image<br><br>
 from PIL import ImageFilter <br><br>
 import matplotlib.pyplot as plt<br><br>
